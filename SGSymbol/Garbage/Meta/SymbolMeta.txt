@@ -1,0 +1,25 @@
+﻿
+	O META o no unused namespace(s)
+
+	O TYPE o no unused namespace(s)
+
+	O LINK o no unused namespace(s)
+
+begin sequence Symbol
+
+	>Compressed
+	<<SymbolCompressed.cs
+
+	>CompressedRaw
+	<<SymbolCompressedRaw.cs
+
+	>Object
+	>>SymbolObject
+	<<<SymbolObject.cs
+
+	>Prototype
+	<<SymbolPrototype.cs
+
+	<Symbol.cs
+
+end sequence
