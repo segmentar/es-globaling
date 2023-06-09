@@ -1,0 +1,30 @@
+﻿
+	O META o no unused namespace(s)
+
+	O TYPE o no unused namespace(s)
+
+	O LINK o no unused namespace(s)
+
+	o SIMPLE o no unused namespace(s)
+
+begin sequence Delimiter
+
+	>Compressed
+	<<DelimiterCompressed.cs
+
+	>CompressedRaw
+	<<DelimiterCompressedRaw.cs
+
+	>CompressedSolid
+	<<DelimiterCompressedSolid.cs
+
+	>Object
+	>>DelimiterObject
+	<<<DelimiterObject.cs
+
+	>Prototype
+	<<DelimiterPrototype.cs
+
+	<Delimiter.cs
+
+end sequence

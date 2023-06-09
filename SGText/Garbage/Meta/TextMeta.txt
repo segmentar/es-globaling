@@ -1,0 +1,28 @@
+﻿
+
+	O META o no unused namespace(s)
+
+	O TYPE o no unused namespace(s)
+
+	O LINK o no unused namespace(s)
+
+	o SIMPLE o no unused namespace(s)
+
+begin sequence Text
+
+	>Compressed
+	<<TextCompressed.cs
+
+	>CompressedRaw
+	<<TextCompressedRaw.cs
+
+	>Object
+	>>TextObject
+	<<<TextObject.cs
+
+	>Prototype
+	<<TextPrototype.cs
+
+	<Text.cs
+
+end sequence
