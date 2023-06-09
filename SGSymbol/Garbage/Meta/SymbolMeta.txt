@@ -5,6 +5,8 @@
 
 	O LINK o no unused namespace(s)
 
+	O SIMPLE o no unused namespace(s)
+
 begin sequence Symbol
 
 	>Compressed
