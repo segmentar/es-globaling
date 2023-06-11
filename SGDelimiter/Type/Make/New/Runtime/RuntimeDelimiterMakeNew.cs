@@ -23,11 +23,11 @@ namespace Core.Shared
 
     public partial class SGDelimiter
     {
-        public static SGDelimiter Runtime_MakeDelimiterNew(Boolean whitespace, Boolean invisible, SGText text, params String[] array_SYMBOL_DELIMITER)
+        public static SGDelimiter Runtime_MakeDelimiterNew(Boolean whitespace, Boolean invisible, Boolean empty, SGText text, params String[] array_SYMBOL_DELIMITER)
         {
             SGDelimiter delimiterResult = default;
 
-            delimiterResult = MakeDelimiterNew(whitespace, invisible, text, array_SYMBOL_DELIMITER, SAPolicy.DelimiterDebugPolicy);
+            delimiterResult = MakeDelimiterNew(whitespace, invisible, empty, text, array_SYMBOL_DELIMITER, SAPolicy.DelimiterDebugPolicy);
 
             return delimiterResult;
         }

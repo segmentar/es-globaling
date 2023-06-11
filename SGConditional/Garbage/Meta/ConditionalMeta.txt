@@ -1,0 +1,27 @@
+﻿
+	O META o no unused namespace(s)
+
+	O TYPE o no unused namespace(s)
+
+	O LINK o no unused namepsace(s)
+
+	O SIMPLE o no unused namespace(s)
+
+sequence Conditional
+
+	>Compressed
+	<<ConditionalCompressed.cs
+
+	>CompressedRaw
+	<<ConditionalCompressedRaw.cs
+
+	>Object
+	>>ConditionalObject
+	<<<ConditionalObject.cs
+
+	>Prototype
+	<<ConditionalPrototype.cs
+
+	<Conditional.cs
+
+end sequence

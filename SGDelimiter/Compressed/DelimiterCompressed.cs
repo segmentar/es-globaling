@@ -12,6 +12,8 @@ namespace Core.Shared
 
         public Boolean Invisible;
 
+        public Boolean Empty;
+
         public Boolean Lone;
     }
 }

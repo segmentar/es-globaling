@@ -21,9 +21,9 @@ namespace Core.Shared
 
     public partial class DelimiterSimple
     {
-        public DelimiterSimple(Boolean whitespace, Boolean invisible, SGText text, params String[] array_SYMBOL_DELIMITER)
+        public DelimiterSimple(Boolean whitespace, Boolean invisible, Boolean empty, SGText text, params String[] array_SYMBOL_DELIMITER)
         {
-            this.Simple = SGDelimiter.Runtime_MakeDelimiterNew(whitespace, invisible, text, array_SYMBOL_DELIMITER);
+            this.Simple = SGDelimiter.Runtime_MakeDelimiterNew(whitespace, invisible, empty, text, array_SYMBOL_DELIMITER);
 
             return;
         }

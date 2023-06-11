@@ -7,7 +7,7 @@
 
 	O SIMPLE o no unused namespace(s)
 
-begin sequence Symbol
+sequence Symbol
 
 	>Compressed
 	<<SymbolCompressed.cs

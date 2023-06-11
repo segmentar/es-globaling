@@ -7,7 +7,7 @@
 
 	o SIMPLE o no unused namespace(s)
 
-begin sequence Delimiter
+sequence Delimiter
 
 	>Compressed
 	<<DelimiterCompressed.cs

@@ -44,7 +44,7 @@ namespace Core.Shared
 
     public partial class SGDelimiter
     {
-        public SGDelimiter(Boolean whitespace, Boolean invisible, SGText text, List<SGSymbol> delimiterList, List<SGSymbol> delimiterRepresentationList, Boolean debug)
+        public SGDelimiter(Boolean whitespace, Boolean invisible, Boolean empty, SGText text, List<SGSymbol> delimiterList, List<SGSymbol> delimiterRepresentationList, Boolean debug)
         {
             this.Whitespace = whitespace;
 
@@ -79,9 +79,9 @@ namespace Core.Shared
 
     public partial class SGDelimiter
     {
-        public SGDelimiter(Boolean immediateLoneOrNull, List<SGSymbol> delimiterList, List<SGSymbol> delimiterRepresentationList, Boolean debug)
+        public SGDelimiter(Boolean lone, List<SGSymbol> delimiterList, List<SGSymbol> delimiterRepresentationList, Boolean debug)
         {
-            this.Lone = immediateLoneOrNull;
+            this.Lone = lone;
 
             this.DelimiterList = delimiterList;
 

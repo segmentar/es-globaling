@@ -8,7 +8,7 @@
 
 	o SIMPLE o no unused namespace(s)
 
-begin sequence Text
+sequence Text
 
 	>Compressed
 	<<TextCompressed.cs

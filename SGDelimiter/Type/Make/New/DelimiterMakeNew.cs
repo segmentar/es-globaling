@@ -45,7 +45,7 @@ namespace Core.Shared
 
     public partial class SGDelimiter
     {
-        public static SGDelimiter MakeDelimiterNew(Boolean whitespace, Boolean invisible, SGText text, String[] array_SYMBOL_DELIMITER, Boolean debug)
+        public static SGDelimiter MakeDelimiterNew(Boolean whitespace, Boolean invisible, Boolean empty, SGText text, String[] array_SYMBOL_DELIMITER, Boolean debug)
         {
             SGDelimiter delimiterResult = default;
 
@@ -61,7 +61,7 @@ namespace Core.Shared
 
             MakeThreeThirdVoid(list_DELIMITER, list_DELIMITER__REPRESENTATION);
 
-            delimiterResult = new SGDelimiter(whitespace, invisible, text, list_DELIMITER, list_DELIMITER__REPRESENTATION, debug);
+            delimiterResult = new SGDelimiter(whitespace, invisible, empty, text, list_DELIMITER, list_DELIMITER__REPRESENTATION, debug);
 
             return delimiterResult;
         }
