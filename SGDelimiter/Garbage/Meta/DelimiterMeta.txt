@@ -15,9 +15,6 @@ begin sequence Delimiter
 	>CompressedRaw
 	<<DelimiterCompressedRaw.cs
 
-	>CompressedSolid
-	<<DelimiterCompressedSolid.cs
-
 	>Object
 	>>DelimiterObject
 	<<<DelimiterObject.cs

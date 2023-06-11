@@ -11,6 +11,8 @@ namespace Core.Shared
 
     public partial class SGDelimiter
     {
+        public SGText Text;
+
         public List<SGSymbol> DelimiterList;
 
         public List<SGSymbol> DelimiterRepresentationList;

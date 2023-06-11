@@ -10,6 +10,15 @@ namespace Core.Shared
         {
             SGText textResult = default;
 
+            var match_ONE__FIRST = (value == default) is true;
+
+            if (match_ONE__FIRST is true)
+            {
+                value = SArchitecture.RuntimeRunning.Source.Text.Value;
+            }
+            else
+                "false".ToString();
+
             textResult = new SGText(value, debug);
 
             return textResult;

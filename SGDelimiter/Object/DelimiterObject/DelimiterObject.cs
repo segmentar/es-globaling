@@ -8,20 +8,27 @@ namespace Core.Shared
     {
         public override String ToString()
         {
-            return String.Join('\n'.ToString(), new String[] { 
+            return String.Join('\n'.ToString(), new String[] {
                 String.Empty + nameof(SGDelimiter) + ' ' + "::" + ' ' + '{',
                 String.Empty + '.' + "compressed",
                 String.Empty + '\t' + '~' + "01" + ' ' + nameof(IsDebug) + ':' + ' ' + IsDebug,
-                String.Empty + '.' + "compressed-solid",
-                String.Empty + '\t' + '~' + "02" + ' ' + nameof(DelimiterList) + ':' + ' ' + ". . .",
-                String.Empty + '\t' + '~' + "03" + ' ' + nameof(DelimiterRepresentationList) + ':' + ' ' + ". . .",
+                String.Empty + '\t' + '~' + "02" + ' ' + nameof(Whitespace) + ':' + ' ' +  Whitespace,
+                String.Empty + '\t' + '~' + "03" + ' ' + nameof(Invisible) + ':' + ' ' + Invisible,
+                String.Empty + '\t' + '~' + "04" + ' ' + nameof(Lone) + ':' + ' ' + Lone,
+                String.Empty + '.' + "compressed-raw",
+                String.Empty + '\t' + '~' + "05" + ' ' + nameof(Text) + ':' + ' ' + ". . .",
+                String.Empty + '\t' + '~' + "06" + ' ' + nameof(DelimiterList) + ':' + ' ' + ". . ." + ' ' + $"[{DelimiterList.Count}]",
+                String.Empty + '\t' + '~' + "07" + ' ' + nameof(DelimiterRepresentationList) + ':' + ' ' + ". . ." + ' ' + $"[{DelimiterRepresentationList.Count}]",
                 String.Empty + '}',
                 String.Empty,
-                String.Empty + '~' + "10" + ' ' + nameof(DelimiterList) + ':',
-                String.Empty, String.Join('\n'.ToString(), DelimiterList,
+                String.Empty + '~' + "10" + ' ' + nameof(Text) + ':',
+                String.Empty + Text,
                 String.Empty,
-                String.Empty + '~' + "20" + ' ' + nameof(DelimiterRepresentationList) + ':',
-                String.Empty + String.Join('\n'.ToString(), DelimiterRepresentationList))
+                String.Empty + '~' + "20" + ' ' + nameof(DelimiterList) + ':',
+                String.Empty + String.Join('\n'.ToString(), DelimiterList),
+                String.Empty,
+                String.Empty + '~' + "30" + ' ' + nameof(DelimiterRepresentationList) + ':',
+                String.Empty + String.Join('\n'.ToString(), DelimiterRepresentationList)
             });
         }
     }

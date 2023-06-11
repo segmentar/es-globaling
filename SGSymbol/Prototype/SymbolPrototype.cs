@@ -8,14 +8,7 @@ namespace Core.Shared
     {
         public SGSymbol(String value, Boolean debug)
         {
-            if (value == default)
-            {
-                this.Value = null;
-            }
-            else
-            {
-                this.Value = value;
-            }
+            this.Value = value;
 
             if (debug is true)
             {

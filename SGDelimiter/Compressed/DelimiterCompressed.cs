@@ -11,5 +11,7 @@ namespace Core.Shared
         public Boolean Whitespace;
 
         public Boolean Invisible;
+
+        public Boolean Lone;
     }
 }

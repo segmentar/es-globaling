@@ -8,14 +8,7 @@ namespace Core.Shared
     {
         public SGText(String value, Boolean debug)
         {
-            if (value == default)
-            {
-                this.Value = SArchitecture.RuntimeRunning.Source.Text.Value;
-            }
-            else
-            {
-                this.Value = value;
-            }
+            this.Value = value;
 
             if (debug is true)
             {
